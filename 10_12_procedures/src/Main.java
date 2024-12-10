@@ -6,6 +6,9 @@ public class Main {
 
         batter();
         sum(25,67);
+        sum(23,76,21);
+        sum("San", "Gin");
+        sum("Rin", 32);
 
     }
 
@@ -16,7 +19,7 @@ public class Main {
         System.out.println("Beat in the eggs.");
         System.out.println("Stir in the dry ingredients.");
     }
-    public static void bake() {
+    public static void bake () {
         //        2	Bake the cookies.
         System.out.println("Set the oven temperature.");
         System.out.println("Set the timer.");
@@ -33,9 +36,22 @@ public class Main {
         System.out.println("Spread frosting and sprinkles.");
     }
 
-    public static void sum(int a, int b) {
+    public static void sum (int a, int b) {
         int result = a+b;
-        System.out.println("Skaitļu "+a+" "+b+" summa ir "+result);
+        System.out.println("Skaitļu summa ir "+result);
     }
 
+    public static void sum (int a, int b, int c) {
+        int result = a+b+c;
+        System.out.println("Skaitļu summa ir "+result);
+    }
+
+    public static void sum (String a, String b) {
+        String result = a+b;
+        System.out.println("Virkņu summa ir "+result);
+    }
+
+    public static void sum (String a, int b) {
+        System.out.println("Skaitļu un virkņu summa ir "+a+" "+b);
+    }
 }
